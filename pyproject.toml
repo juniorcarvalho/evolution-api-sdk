@@ -1,15 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "evolution-api-sdk"
 version = "0.1.0"
-description = "SDK for interacting with the Evolution API"
+description = "SDK Python completo para integração com a Evolution API - Solução robusta para automação do WhatsApp Business"
 authors = [
     { name = "Júnior Carvalho", email = "joseadolfojr@gmail.com" }
 ]
 readme = "README.md"
-license = { text = "Apache-2.0" }
-requires-python = ">=3.13"
+license = "Apache-2.0"
+requires-python = ">=3.8"
 dependencies = [
     "requests>=2.32.3",
-    "pytest==8.3.4",
-    "requests-toolbelt==1.0.0",
+    "requests-toolbelt>=1.0.0",
 ]
+keywords = [
+    "whatsapp",
+    "evolution-api",
+    "whatsapp-api",
+    "whatsapp-automation",
+    "sdk",
+    "api-client",
+    "chatbot",
+    "messaging"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Chat",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+[project.urls]
+Homepage = "https://github.com/juniorcarvalho/evolution-api-sdk"
+Documentation = "https://github.com/juniorcarvalho/evolution-api-sdk#readme"
+Repository = "https://github.com/juniorcarvalho/evolution-api-sdk.git"
+Issues = "https://github.com/juniorcarvalho/evolution-api-sdk/issues"
+Changelog = "https://github.com/juniorcarvalho/evolution-api-sdk/releases"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+]
+
+[tool.setuptools]
+packages = ["models", "service"]
+py-modules = ["client", "exception"]
