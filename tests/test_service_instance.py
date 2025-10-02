@@ -50,3 +50,14 @@ def test_fetch_instances_api_error(instance_service, mock_client):
 
     with pytest.raises(EvolutionAPIError, match='Erro na requisição: 500 - Erro Interno do Servidor'):
         instance_service.fetch_instances()
+
+
+
+def test_restart_instance_success(instance_service, mock_client):
+    mock_client.put.return_value = {"instance": {"state": "open"}}
+
+    response = instance_service.restart_instance("test_instance")
+
+    assert response["instance"]["state"] == "open"
+    mock_client.put.assert_called_once_with('instance/restart/test_instance')
+
