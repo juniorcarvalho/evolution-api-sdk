@@ -13,4 +13,7 @@ class ChangeTypebotStatus:
     def __init__(self, number: str, status: str):
         self.number = number
         self.status = status
+<<<<<<< HEAD:models/typebot.py
+=======
 
+>>>>>>> main:evolution_api_sdk/models/typebot.py

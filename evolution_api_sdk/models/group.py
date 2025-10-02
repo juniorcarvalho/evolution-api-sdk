@@ -24,4 +24,7 @@ class UpdateGroupSetting:
         self.groupId = group_id
         self.setting = setting
         self.value = value
+<<<<<<< HEAD:models/group.py
+=======
 
+>>>>>>> main:evolution_api_sdk/models/group.py

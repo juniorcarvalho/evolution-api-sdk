@@ -1,4 +1,8 @@
+<<<<<<< HEAD:service/chat.py
+from models.chat import (
+=======
 from evolution_api_sdk.models.chat import (
+>>>>>>> main:evolution_api_sdk/service/chat.py
     MarkAsRead,
     ArchiveChat,
     DeleteMessage,
@@ -42,4 +46,7 @@ class ChatService:
 
     def find_chats(self, instance_name: str):
         return self.client.get(f'chat/findChats/{instance_name}')
+<<<<<<< HEAD:service/chat.py
+=======
 
+>>>>>>> main:evolution_api_sdk/service/chat.py

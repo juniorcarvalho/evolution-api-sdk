@@ -1,4 +1,8 @@
+<<<<<<< HEAD:service/typebot.py
+from models.typebot import (
+=======
 from evolution_api_sdk.models.typebot import (
+>>>>>>> main:evolution_api_sdk/service/typebot.py
     SetTypebot,
     StartTypebot,
     ChangeTypebotStatus,
@@ -19,4 +23,7 @@ class TypebotService:
 
     def change_typebot_status(self, instance_name: str, data: ChangeTypebotStatus):
         return self.client.post(f'typebot/changeStatus/{instance_name}', data=data.__dict__)
+<<<<<<< HEAD:service/typebot.py
+=======
 
+>>>>>>> main:evolution_api_sdk/service/typebot.py

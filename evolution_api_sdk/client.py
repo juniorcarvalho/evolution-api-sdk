@@ -1,6 +1,20 @@
 import requests
 from requests_toolbelt import MultipartEncoder
 
+<<<<<<< HEAD:client.py
+from exception import EvolutionAuthenticationError, EvolutionNotFoundError, EvolutionAPIError
+from service.instance import InstanceService
+from service.webhook import WebhookService
+from service.settings import SettingsService
+from service.message import MessageService
+from service.chat import ChatService
+from service.profile import ProfileService
+from service.group import GroupService
+from service.typebot import TypebotService
+from service.chatwoot import ChatwootService
+from service.rabbitmq import RabbitMQService
+from service.websocket import WebSocketService
+=======
 from evolution_api_sdk.exception import EvolutionAuthenticationError, EvolutionNotFoundError, EvolutionAPIError
 from evolution_api_sdk.service.instance import InstanceService
 from evolution_api_sdk.service.webhook import WebhookService
@@ -13,6 +27,7 @@ from evolution_api_sdk.service.typebot import TypebotService
 from evolution_api_sdk.service.chatwoot import ChatwootService
 from evolution_api_sdk.service.rabbitmq import RabbitMQService
 from evolution_api_sdk.service.websocket import WebSocketService
+>>>>>>> main:evolution_api_sdk/client.py
 
 
 class EvolutionClient:
@@ -32,11 +47,14 @@ class EvolutionClient:
         self.chatwoot = ChatwootService(self)
         self.rabbitmq = RabbitMQService(self)
         self.websocket = WebSocketService(self)
+<<<<<<< HEAD:client.py
+=======
 
 
 
 
 
+>>>>>>> main:evolution_api_sdk/client.py
 
     def _get_headers(self):
         return {
