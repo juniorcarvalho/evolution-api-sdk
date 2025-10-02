@@ -5,6 +5,14 @@ from evolution_api_sdk.exception import EvolutionAuthenticationError, EvolutionN
 from evolution_api_sdk.service.instance import InstanceService
 from evolution_api_sdk.service.webhook import WebhookService
 from evolution_api_sdk.service.settings import SettingsService
+from evolution_api_sdk.service.message import MessageService
+from evolution_api_sdk.service.chat import ChatService
+from evolution_api_sdk.service.profile import ProfileService
+from evolution_api_sdk.service.group import GroupService
+from evolution_api_sdk.service.typebot import TypebotService
+from evolution_api_sdk.service.chatwoot import ChatwootService
+from evolution_api_sdk.service.rabbitmq import RabbitMQService
+from evolution_api_sdk.service.websocket import WebSocketService
 
 
 class EvolutionClient:
@@ -16,6 +24,19 @@ class EvolutionClient:
         self.instance = InstanceService(self)
         self.webhook = WebhookService(self)
         self.settings = SettingsService(self)
+        self.message = MessageService(self)
+        self.chat = ChatService(self)
+        self.profile = ProfileService(self)
+        self.group = GroupService(self)
+        self.typebot = TypebotService(self)
+        self.chatwoot = ChatwootService(self)
+        self.rabbitmq = RabbitMQService(self)
+        self.websocket = WebSocketService(self)
+
+
+
+
+
 
     def _get_headers(self):
         return {
