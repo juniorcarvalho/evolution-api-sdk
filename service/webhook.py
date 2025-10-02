@@ -1,4 +1,4 @@
-from models.webhook import WebhookConfig
+from evolution_api_sdk.models.webhook import WebhookConfig
 
 class WebhookService:
     def __init__(self, client):

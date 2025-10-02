@@ -1,10 +1,10 @@
 import requests
 from requests_toolbelt import MultipartEncoder
 
-from exception import EvolutionAuthenticationError, EvolutionNotFoundError, EvolutionAPIError
-from service.instance import InstanceService
-from service.webhook import WebhookService
-from service.settings import SettingsService
+from evolution_api_sdk.exception import EvolutionAuthenticationError, EvolutionNotFoundError, EvolutionAPIError
+from evolution_api_sdk.service.instance import InstanceService
+from evolution_api_sdk.service.webhook import WebhookService
+from evolution_api_sdk.service.settings import SettingsService
 
 
 class EvolutionClient:

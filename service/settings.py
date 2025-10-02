@@ -1,4 +1,4 @@
-from models.settings import SettingsConfig
+from evolution_api_sdk.models.settings import SettingsConfig
 
 class SettingsService:
     def __init__(self, client):
@@ -12,4 +12,4 @@ class SettingsService:
 
     def find_settings(self, instance_name: str):
         return self.client.get(f'settings/find/{instance_name}')
-name}')
+

@@ -1,0 +1,11 @@
+[project]
+name = "evolution-api-sdk"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests>=2.32.3",
+    "pytest==8.3.4",
+    "requests-toolbelt==1.0.0",
+]
