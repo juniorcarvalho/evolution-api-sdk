@@ -56,7 +56,3 @@ class TemplateMessage(Message):
         self.templateName = template_name
         self.language = language
         self.components = components
-<<<<<<< HEAD:models/message.py
-=======
-
->>>>>>> main:evolution_api_sdk/models/message.py

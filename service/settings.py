@@ -1,4 +1,4 @@
-from evolution_api_sdk.models.settings import SettingsConfig
+from models.settings import SettingsConfig
 
 class SettingsService:
     def __init__(self, client):

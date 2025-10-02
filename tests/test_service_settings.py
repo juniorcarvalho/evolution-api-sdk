@@ -2,8 +2,8 @@ from unittest.mock import Mock
 
 import pytest
 
-from evolution_api_sdk.models.settings import SettingsConfig
-from evolution_api_sdk.service.settings import SettingsService
+from models.settings import SettingsConfig
+from service.settings import SettingsService
 
 
 @pytest.fixture

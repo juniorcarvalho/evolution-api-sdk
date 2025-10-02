@@ -1,8 +1,4 @@
-<<<<<<< HEAD:service/group.py
 from models.group import (
-=======
-from evolution_api_sdk.models.group import (
->>>>>>> main:evolution_api_sdk/service/group.py
     CreateGroup,
     UpdateGroupSubject,
     UpdateGroupDescription,
@@ -62,7 +58,3 @@ class GroupService:
 
     def leave_group(self, instance_name: str, group_id: str):
         return self.client.delete(f'group/leaveGroup/{instance_name}', data={'groupId': group_id})
-<<<<<<< HEAD:service/group.py
-=======
-
->>>>>>> main:evolution_api_sdk/service/group.py

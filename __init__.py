@@ -1,4 +1,4 @@
-from .client import EvolutionClient
+from client import EvolutionClient
 
 
 __all__ = [

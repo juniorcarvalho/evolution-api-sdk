@@ -2,8 +2,8 @@ from unittest.mock import Mock
 
 import pytest
 
-from evolution_api_sdk.exception import EvolutionAuthenticationError, EvolutionNotFoundError, EvolutionAPIError
-from evolution_api_sdk.service.instance import InstanceService
+from exception import EvolutionAuthenticationError, EvolutionNotFoundError, EvolutionAPIError
+from service.instance import InstanceService
 
 
 @pytest.fixture
@@ -118,7 +118,7 @@ def test_logout_instance_success(instance_service, mock_client):
 
 
 def test_set_presence_success(instance_service, mock_client):
-    from evolution_api_sdk.models.instance import PresenceStatus, PresenceConfig
+    from models.instance import PresenceStatus, PresenceConfig
     mock_client.post.return_value = {"presence": "available"}
 
     response = instance_service.set_presence("test_instance", PresenceStatus.AVAILABLE)

@@ -2,8 +2,8 @@ from unittest.mock import Mock
 
 import pytest
 
-from evolution_api_sdk.models.webhook import WebhookConfig, WebhookEvents
-from evolution_api_sdk.service.webhook import WebhookService
+from models.webhook import WebhookConfig, WebhookEvents
+from service.webhook import WebhookService
 
 
 @pytest.fixture
