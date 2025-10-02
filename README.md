@@ -25,10 +25,12 @@ SDK Python completo para integração com a [Evolution API](https://doc.evolutio
 - [Licença](#licença)
 - [Suporte](#suporte)
 
+<a id="sobre-o-projeto"></a>
 ## 🚀 Sobre o Projeto
 
 O **Evolution API SDK** é uma biblioteca Python completa que facilita a integração com a Evolution API, oferecendo uma interface intuitiva e type-safe para todas as funcionalidades da API do WhatsApp Business.
 
+<a id="recursos"></a>
 ## 🎯 Recursos
 
 ### Serviços Disponíveis
@@ -47,6 +49,7 @@ O **Evolution API SDK** é uma biblioteca Python completa que facilita a integra
 | **RabbitMQ** | Integração com RabbitMQ | Configurar fila de mensagens |
 | **WebSocket** | Conexão WebSocket | Estabelecer conexão em tempo real |
 
+<a id="instalação"></a>
 ## 📦 Instalação
 
 ### Requisitos
@@ -80,6 +83,7 @@ pip install -e .
 uv pip install -e .
 ```
 
+<a id="início-rápido"></a>
 ## ⚡ Início Rápido
 
 ```python
@@ -110,8 +114,10 @@ client.message.send_text("minha-instancia", message)
 print("✅ Mensagem enviada com sucesso!")
 ```
 
+<a id="documentação-completa"></a>
 ## 📚 Documentação Completa
 
+<a id="gerenciamento-de-instâncias"></a>
 ### Gerenciamento de Instâncias
 
 O `InstanceService` gerencia o ciclo de vida completo das instâncias do WhatsApp.
@@ -174,6 +180,7 @@ client.instance.set_presence("vendas-bot", PresenceStatus.UNAVAILABLE)
 
 ---
 
+<a id="envio-de-mensagens"></a>
 ### Envio de Mensagens
 
 O `MessageService` oferece métodos para enviar diversos tipos de mensagens.
@@ -318,6 +325,7 @@ client.message.send_template("vendas-bot", template)
 
 ---
 
+<a id="gerenciamento-de-chats"></a>
 ### Gerenciamento de Chats
 
 O `ChatService` gerencia conversas e mensagens.
@@ -427,6 +435,7 @@ for chat in chats['chats']:
 
 ---
 
+<a id="gerenciamento-de-perfil"></a>
 ### Gerenciamento de Perfil
 
 O `ProfileService` gerencia informações do perfil WhatsApp.
@@ -498,6 +507,7 @@ client.profile.update_privacy_settings("vendas-bot", privacy)
 
 ---
 
+<a id="gerenciamento-de-grupos"></a>
 ### Gerenciamento de Grupos
 
 O `GroupService` oferece funcionalidades completas para grupos.
@@ -642,6 +652,7 @@ client.group.leave_group("vendas-bot", "123456@g.us")
 
 ---
 
+<a id="webhooks"></a>
 ### Webhooks
 
 O `WebhookService` configura endpoints para receber notificações de eventos.
@@ -724,6 +735,7 @@ WebhookEvents.TYPEBOT_SEND_MESSAGE
 
 ---
 
+<a id="configurações"></a>
 ### Configurações
 
 O `SettingsService` gerencia configurações da instância.
@@ -756,6 +768,7 @@ print(f"Sempre online: {settings['always_online']}")
 
 ---
 
+<a id="integrações"></a>
 ### Integrações
 
 #### Typebot (Chatbot)
@@ -836,6 +849,7 @@ websocket_info = client.websocket.find_websocket("vendas-bot")
 
 ---
 
+<a id="tratamento-de-erros"></a>
 ## 🛡️ Tratamento de Erros
 
 O SDK oferece exceções específicas para diferentes cenários:
@@ -891,7 +905,7 @@ pytest tests/test_service_message.py -v
 pytest tests/test_client.py::test_get_success -v
 ```
 
-
+<a id="contribuição"></a>
 ## 🤝 Contribuição
 
 Contribuições são muito bem-vindas! Siga os passos abaixo:
@@ -938,6 +952,7 @@ Contribuições são muito bem-vindas! Siga os passos abaixo:
 - ✅ Documente novas funcionalidades
 - ✅ Use commits semânticos (feat, fix, docs, etc.)
 
+<a id="licença"></a>
 ## 📄 Licença
 
 Este projeto está licenciado sob a **Licença Apache 2.0**.
@@ -960,6 +975,7 @@ limitations under the License.
 
 Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
+<a id="suporte"></a>
 ## 💬 Suporte
 
 ### Precisa de Ajuda?
