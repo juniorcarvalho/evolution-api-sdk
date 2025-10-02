@@ -1,4 +1,8 @@
+<<<<<<< HEAD:service/profile.py
 from models.profile import (
+=======
+from evolution_api_sdk.models.profile import (
+>>>>>>> main:evolution_api_sdk/service/profile.py
     UpdateProfileName,
     UpdateProfileStatus,
     UpdatePrivacySettings,
@@ -32,3 +36,7 @@ class ProfileService:
 
     def update_privacy_settings(self, instance_name: str, data: UpdatePrivacySettings):
         return self.client.put(f'profile/updatePrivacySettings/{instance_name}', data=data.__dict__)
+<<<<<<< HEAD:service/profile.py
+=======
+
+>>>>>>> main:evolution_api_sdk/service/profile.py

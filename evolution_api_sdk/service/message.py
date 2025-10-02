@@ -1,4 +1,8 @@
+<<<<<<< HEAD:service/message.py
 from models.message import (
+=======
+from evolution_api_sdk.models.message import (
+>>>>>>> main:evolution_api_sdk/service/message.py
     TextMessage,
     MediaMessage,
     LocationMessage,
@@ -42,3 +46,7 @@ class MessageService:
 
     def send_template(self, instance_name: str, data: TemplateMessage):
         return self.client.post(f'message/sendTemplate/{instance_name}', data=data.__dict__)
+<<<<<<< HEAD:service/message.py
+=======
+
+>>>>>>> main:evolution_api_sdk/service/message.py

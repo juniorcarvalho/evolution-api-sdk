@@ -1,4 +1,8 @@
+<<<<<<< HEAD:service/rabbitmq.py
 from models.rabbitmq import SetRabbitMQ
+=======
+from evolution_api_sdk.models.rabbitmq import SetRabbitMQ
+>>>>>>> main:evolution_api_sdk/service/rabbitmq.py
 
 class RabbitMQService:
     def __init__(self, client):
@@ -9,3 +13,7 @@ class RabbitMQService:
 
     def find_rabbitmq(self, instance_name: str):
         return self.client.get(f'rabbitmq/find/{instance_name}')
+<<<<<<< HEAD:service/rabbitmq.py
+=======
+
+>>>>>>> main:evolution_api_sdk/service/rabbitmq.py

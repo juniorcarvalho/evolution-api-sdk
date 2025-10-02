@@ -1,4 +1,8 @@
+<<<<<<< HEAD:service/websocket.py
 from models.websocket import SetWebSocket
+=======
+from evolution_api_sdk.models.websocket import SetWebSocket
+>>>>>>> main:evolution_api_sdk/service/websocket.py
 
 class WebSocketService:
     def __init__(self, client):
@@ -9,3 +13,7 @@ class WebSocketService:
 
     def find_websocket(self, instance_name: str):
         return self.client.get(f'websocket/find/{instance_name}')
+<<<<<<< HEAD:service/websocket.py
+=======
+
+>>>>>>> main:evolution_api_sdk/service/websocket.py

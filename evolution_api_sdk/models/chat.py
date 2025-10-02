@@ -23,3 +23,7 @@ class UpdateMessage:
         self.number = number
         self.messageId = message_id
         self.text = text
+<<<<<<< HEAD:models/chat.py
+=======
+
+>>>>>>> main:evolution_api_sdk/models/chat.py
