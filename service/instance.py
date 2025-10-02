@@ -34,3 +34,12 @@ class InstanceService:
             f'instance/setPresence/{instance_name}',
             data=config.__dict__,
         )
+
+    def restart_instance(self, instance_name: str):
+        return self.client.put(f'instance/restart/{instance_name}')
+
+
+
+    def restart_instance(self, instance_name: str):
+        return self.client.put(f'instance/restart/{instance_name}')
+
